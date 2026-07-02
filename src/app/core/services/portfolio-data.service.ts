@@ -20,8 +20,8 @@ export class PortfolioDataService {
     experience: '5+ Years',
     email: 'gowriprasathbabu@gmail.com',
     phone: '+91 9486740455',
-    github: 'https://github.com/gowriprasath',
-    linkedin: 'www.linkedin.com/in/gowriprasathbabu-software-developer-fullstack',
+    github: 'https://github.com/gowriprasathbabu-wq/',
+    linkedin: 'https://www.linkedin.com/in/gowriprasathbabu-software-developer-fullstack',
     summary: `Dedicated Full Stack Software Engineer with 5+ years of extensive experience designing and developing enterprise-grade applications. Specializing in Angular, ASP.NET Core, React, and AWS cloud solutions. Proven track record of leading cross-functional teams, architecting scalable systems, and delivering high-quality software across global deployments.`,
     resumeUrl: '/assets/resume/Gowri Prasath Babu - Software Developer.pdf',
   };

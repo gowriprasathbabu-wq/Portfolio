@@ -171,11 +171,11 @@ Edit `src/app/core/services/portfolio-data.service.ts`:
 
 ```typescript
 readonly personalInfo: PersonalInfo = {
-  name:     'Your Name',
-  title:    'Your Title',
-  email:    'your@email.com',
-  github:   'https://github.com/yourusername',
-  linkedin: 'https://linkedin.com/in/yourusername',
+  name:     'Gowri Prasath Babu',
+  title:    'Senior Software Engineer',
+  email:    'gowriprasathbabu@email.com',
+  github:   'https://github.com/gowriprasathbabu-wq',
+  linkedin: 'https://www.linkedin.com/in/gowriprasathbabu-software-developer-fullstack',
   // ...
 };
 ```
@@ -229,5 +229,5 @@ MIT © 2025 Gowri Prasath Babu
 Built by [Gowri Prasath Babu](https://gowriprasath.dev) — Senior Software Engineer at Exalca Technologies, Coimbatore.
 
 **Connect:**
-- GitHub: [@gowriprasath](https://github.com/gowriprasath)
-- LinkedIn: [in/gowriprasath](https://linkedin.com/in/gowriprasath)
+- GitHub: [@gowriprasath](https://github.com/gowriprasathbabu-wq/)
+- LinkedIn: [in/gowriprasath](https://www.linkedin.com/in/gowriprasathbabu-software-developer-fullstack)

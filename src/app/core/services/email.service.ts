@@ -18,7 +18,7 @@ export class EmailService {
 
     try {
       // Dynamic import keeps emailjs out of the SSR/server bundle.
-      const emailjs = await import('emailjs-com');
+      const emailjs = await import('@emailjs/browser');
 
       const result = await emailjs.send(
         environment.emailjsServiceId,

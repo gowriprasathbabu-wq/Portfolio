@@ -586,13 +586,13 @@ export class ContactComponent implements AfterViewInit {
     {
       icon: '⌨️',
       label: 'GitHub',
-      handle: 'github.com/gowriprasath',
+      handle: 'https://github.com/gowriprasathbabu-wq',
       href: this.data.personalInfo.github,
     },
     {
       icon: '💼',
       label: 'LinkedIn',
-      handle: 'linkedin.com/in/gowriprasath',
+      handle: 'https://www.linkedin.com/in/gowriprasathbabu-software-developer-fullstack',
       href: this.data.personalInfo.linkedin,
     },
   ];
