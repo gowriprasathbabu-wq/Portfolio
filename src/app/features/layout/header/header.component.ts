@@ -1,5 +1,5 @@
 import {
-  Component, inject, ChangeDetectionStrategy, HostListener,
+  Component, inject, ChangeDetectionStrategy, 
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PortfolioState } from '../../../state/portfolio.state';
