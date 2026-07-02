@@ -1,0 +1,112 @@
+// ============================================================
+// DESIGN TOKENS — Dark Premium Orange Theme
+// ============================================================
+
+// Core Palette
+$primary:        #FF6B00;
+$primary-light:  #FF8C42;
+$primary-dark:   #E55A00;
+$primary-glow:   rgba(255, 107, 0, 0.15);
+$primary-border: rgba(255, 107, 0, 0.3);
+
+// Backgrounds
+$bg-base:        #0A0A0A;
+$bg-surface:     #111111;
+$bg-card:        #1A1A1A;
+$bg-card-hover:  #1F1F1F;
+$bg-overlay:     rgba(10, 10, 10, 0.85);
+
+// Text
+$text-primary:   #FFFFFF;
+$text-secondary: #C0C0C0;
+$text-muted:     #707070;
+$text-disabled:  #404040;
+
+// Borders
+$border-subtle:  rgba(255, 255, 255, 0.06);
+$border-default: rgba(255, 255, 255, 0.10);
+$border-strong:  rgba(255, 255, 255, 0.18);
+
+// Semantic
+$success:  #22C55E;
+$warning:  #F59E0B;
+$error:    #EF4444;
+$info:     #3B82F6;
+
+// Gradients
+$gradient-primary:      linear-gradient(135deg, #FF6B00, #FF8C42);
+$gradient-primary-soft: linear-gradient(135deg, rgba(255,107,0,0.12), rgba(255,140,66,0.06));
+$gradient-dark:         linear-gradient(180deg, #0A0A0A 0%, #111111 100%);
+$gradient-hero:         radial-gradient(ellipse 80% 60% at 50% -20%, rgba(255,107,0,0.18) 0%, transparent 70%);
+$gradient-card:         linear-gradient(145deg, #1A1A1A, #141414);
+$gradient-text:         linear-gradient(135deg, #FF6B00, #FF8C42, #FFB347);
+
+// Spacing Scale
+$space-1:   4px;
+$space-2:   8px;
+$space-3:   12px;
+$space-4:   16px;
+$space-5:   20px;
+$space-6:   24px;
+$space-8:   32px;
+$space-10:  40px;
+$space-12:  48px;
+$space-16:  64px;
+$space-20:  80px;
+$space-24:  96px;
+$space-32: 128px;
+
+// Border Radius
+$radius-sm:   6px;
+$radius-md:   10px;
+$radius-lg:   16px;
+$radius-xl:   24px;
+$radius-2xl:  32px;
+$radius-full: 9999px;
+
+// Shadows
+$shadow-sm:    0 1px 3px rgba(0,0,0,0.5);
+$shadow-md:    0 4px 16px rgba(0,0,0,0.6);
+$shadow-lg:    0 8px 40px rgba(0,0,0,0.7);
+$shadow-glow:  0 0 40px rgba(255,107,0,0.2);
+$shadow-glow-sm: 0 0 20px rgba(255,107,0,0.15);
+$shadow-card:  0 2px 20px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);
+
+// Transitions
+$transition-fast:   0.15s ease;
+$transition-base:   0.25s ease;
+$transition-slow:   0.4s ease;
+$transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+// Breakpoints
+$bp-sm:   576px;
+$bp-md:   768px;
+$bp-lg:   1024px;
+$bp-xl:   1280px;
+$bp-2xl:  1440px;
+
+// Z-Index
+$z-base:    1;
+$z-card:    10;
+$z-overlay: 100;
+$z-nav:     1000;
+$z-modal:   2000;
+$z-tooltip: 3000;
+
+// CSS Custom Properties (for runtime theming)
+:root {
+  --primary:        #{$primary};
+  --primary-light:  #{$primary-light};
+  --primary-glow:   #{$primary-glow};
+  --bg-base:        #{$bg-base};
+  --bg-surface:     #{$bg-surface};
+  --bg-card:        #{$bg-card};
+  --text-primary:   #{$text-primary};
+  --text-secondary: #{$text-secondary};
+  --text-muted:     #{$text-muted};
+  --border-subtle:  #{$border-subtle};
+  --border-default: #{$border-default};
+  --radius-md:      #{$radius-md};
+  --radius-lg:      #{$radius-lg};
+  --transition-base: #{$transition-base};
+}
