@@ -5,7 +5,8 @@
 // Scroll progress bar
 .scroll-progress {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   height: 2px;
   background: $gradient-primary;
   z-index: $z-modal;
@@ -16,11 +17,12 @@
 // Custom cursor
 .cursor-glow {
   position: fixed;
-  width: 300px; height: 300px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
-  background: radial-gradient(circle, rgba(255,107,0,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 107, 0, 0.06) 0%, transparent 70%);
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease;
 }
@@ -36,9 +38,11 @@
     gap: $space-2;
     margin-bottom: $space-4;
 
-    &::before, &::after {
-      content: '';
-      width: 20px; height: 1px;
+    &::before,
+    &::after {
+      content: "";
+      width: 20px;
+      height: 1px;
       background: $primary;
       opacity: 0.6;
     }
@@ -65,7 +69,10 @@
   border: 1px solid $border-subtle;
   border-radius: $radius-xl;
   padding: $space-6;
-  transition: transform $transition-base, border-color $transition-base, box-shadow $transition-base;
+  transition:
+    transform $transition-base,
+    border-color $transition-base,
+    box-shadow $transition-base;
 
   &:hover {
     transform: translateY(-4px);
@@ -81,7 +88,7 @@
   gap: $space-2;
   padding: 12px 24px;
   border-radius: $radius-full;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -94,21 +101,23 @@
   overflow: hidden;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     opacity: 0;
     transition: opacity $transition-fast;
   }
-  &:hover::before { opacity: 1; }
+  &:hover::before {
+    opacity: 1;
+  }
 
   &-primary {
     background: $gradient-primary;
     color: #fff;
-    box-shadow: 0 4px 24px rgba(255,107,0,0.35);
+    box-shadow: 0 4px 24px rgba(255, 107, 0, 0.35);
     &:hover {
-      box-shadow: 0 6px 36px rgba(255,107,0,0.5);
+      box-shadow: 0 6px 36px rgba(255, 107, 0, 0.5);
       transform: translateY(-1px);
     }
   }
@@ -120,7 +129,7 @@
     &:hover {
       border-color: $primary-border;
       color: $primary-light;
-      box-shadow: 0 0 20px rgba(255,107,0,0.1);
+      box-shadow: 0 0 20px rgba(255, 107, 0, 0.1);
     }
   }
 
@@ -129,16 +138,24 @@
     color: $primary-light;
     border: 1px solid $primary-border;
     &:hover {
-      background: rgba(255,107,0,0.2);
+      background: rgba(255, 107, 0, 0.2);
       box-shadow: $shadow-glow-sm;
     }
   }
 
-  &-sm { padding: 8px 16px; font-size: 0.8125rem; }
-  &-lg { padding: 16px 32px; font-size: 1rem; }
+  &-sm {
+    padding: 8px 16px;
+    font-size: 0.8125rem;
+  }
+  &-lg {
+    padding: 16px 32px;
+    font-size: 1rem;
+  }
 
   // Magnetic effect base
-  &-magnetic { will-change: transform; }
+  &-magnetic {
+    will-change: transform;
+  }
 }
 
 // Form controls
@@ -158,27 +175,31 @@
 .form-control {
   width: 100%;
   padding: 12px 16px;
-  background: rgba(255,255,255,0.04);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid $border-default;
   border-radius: $radius-md;
   color: $text-primary;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.9375rem;
-  transition: border-color $transition-fast, box-shadow $transition-fast;
+  transition:
+    border-color $transition-fast,
+    box-shadow $transition-fast;
   outline: none;
   appearance: none;
 
-  &::placeholder { color: $text-disabled; }
+  &::placeholder {
+    color: $text-disabled;
+  }
 
   &:focus {
     border-color: $primary;
-    box-shadow: 0 0 0 3px rgba(255,107,0,0.12);
-    background: rgba(255,255,255,0.06);
+    box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.12);
+    background: rgba(255, 255, 255, 0.06);
   }
 
   &.ng-invalid.ng-touched {
     border-color: $error;
-    box-shadow: 0 0 0 3px rgba(239,68,68,0.1);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
   }
 }
 
@@ -210,13 +231,13 @@ textarea.form-control {
   animation: fadeInUp 0.4s ease;
 
   &-success {
-    background: rgba(34,197,94,0.15);
-    border: 1px solid rgba(34,197,94,0.3);
+    background: rgba(34, 197, 94, 0.15);
+    border: 1px solid rgba(34, 197, 94, 0.3);
     color: #4ade80;
   }
   &-error {
-    background: rgba(239,68,68,0.15);
-    border: 1px solid rgba(239,68,68,0.3);
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
     color: #f87171;
   }
 }
@@ -224,7 +245,7 @@ textarea.form-control {
 // Skill bar
 .skill-bar {
   height: 3px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: $radius-full;
   overflow: hidden;
 
@@ -235,7 +256,9 @@ textarea.form-control {
     transform-origin: left;
     transform: scaleX(0);
     transition: transform 1.2s cubic-bezier(0.34, 1.2, 0.64, 1);
-    &.animated { transform: scaleX(1); }
+    &.animated {
+      transform: scaleX(1);
+    }
   }
 }
 
@@ -245,9 +268,11 @@ textarea.form-control {
   padding-left: $space-8;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    left: 16px; top: 0; bottom: 0;
+    left: 16px;
+    top: 0;
+    bottom: 0;
     width: 1px;
     background: linear-gradient(180deg, $primary 0%, transparent 100%);
   }
@@ -257,14 +282,17 @@ textarea.form-control {
     padding-bottom: $space-10;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: calc(-#{$space-8} + 12px);
       top: 6px;
-      width: 10px; height: 10px;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
       background: $primary;
-      box-shadow: 0 0 0 4px rgba(255,107,0,0.15), 0 0 16px rgba(255,107,0,0.4);
+      box-shadow:
+        0 0 0 4px rgba(255, 107, 0, 0.15),
+        0 0 16px rgba(255, 107, 0, 0.4);
     }
   }
 }
@@ -295,8 +323,10 @@ textarea.form-control {
 // Particles canvas
 canvas#particles {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
   z-index: 0;
   opacity: 0.4;
@@ -310,17 +340,20 @@ canvas#particles {
   text-decoration: none;
   padding: $space-2 $space-4;
   border-radius: $radius-full;
-  transition: color $transition-fast, background $transition-fast;
+  transition:
+    color $transition-fast,
+    background $transition-fast;
   letter-spacing: 0.02em;
   cursor: pointer;
 
-  &:hover, &.active {
+  &:hover,
+  &.active {
     color: $text-primary;
-    background: rgba(255,255,255,0.06);
+    background: rgba(255, 255, 255, 0.06);
   }
 
   &.active {
     color: $primary-light;
-    background: rgba(255,107,0,0.1);
+    background: rgba(255, 107, 0, 0.1);
   }
 }

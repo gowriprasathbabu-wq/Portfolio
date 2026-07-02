@@ -12,6 +12,7 @@
     "prerender": "ng build --configuration production",
     "test": "ng test",
     "lint": "eslint src --ext .ts",
+    "format": "prettier --write src/**/*.{ts,html,scss}",
     "docker:build": "docker build -t gowri-portfolio .",
     "docker:run": "docker run -p 4000:4000 gowri-portfolio"
   },

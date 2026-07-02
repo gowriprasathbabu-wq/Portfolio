@@ -1,23 +1,35 @@
-import { Component, ChangeDetectionStrategy, afterNextRender, PLATFORM_ID, inject } from '@angular/core';
+import {
+  Component,
+  ChangeDetectionStrategy,
+  afterNextRender,
+  PLATFORM_ID,
+  inject,
+} from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { HeroComponent }            from './components/hero/hero.component';
-import { AboutComponent }           from './components/about/about.component';
-import { SkillsComponent }          from './components/skills/skills.component';
-import { ExperienceComponent }      from './components/experience/experience.component';
-import { ProjectsComponent }        from './components/projects/projects.component';
-import { AchievementsComponent }    from './components/achievements/achievements.component';
-import { ArchitectureComponent }    from './components/architecture/architecture.component';
-import { CertificationsComponent }  from './components/certifications/certifications.component';
-import { ContactComponent }         from './components/contact/contact.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { AboutComponent } from './components/about/about.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { AchievementsComponent } from './components/achievements/achievements.component';
+import { ArchitectureComponent } from './components/architecture/architecture.component';
+import { CertificationsComponent } from './components/certifications/certifications.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
-    HeroComponent, AboutComponent, SkillsComponent, ExperienceComponent,
-    ProjectsComponent, AchievementsComponent, ArchitectureComponent,
-    CertificationsComponent, ContactComponent,
+    HeroComponent,
+    AboutComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    AchievementsComponent,
+    ArchitectureComponent,
+    CertificationsComponent,
+    ContactComponent,
   ],
   template: `
     <div class="home-wrapper">
@@ -32,7 +44,14 @@ import { ContactComponent }         from './components/contact/contact.component
       <app-contact />
     </div>
   `,
-  styles: [`.home-wrapper { position: relative; z-index: 1; }`],
+  styles: [
+    `
+      .home-wrapper {
+        position: relative;
+        z-index: 1;
+      }
+    `,
+  ],
 })
 export class HomeComponent {
   private readonly platform = inject(PLATFORM_ID);
@@ -52,11 +71,21 @@ export class HomeComponent {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const resize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
     resize();
     window.addEventListener('resize', resize);
 
-    const particles: { x: number; y: number; vx: number; vy: number; size: number; alpha: number }[] = [];
+    const particles: {
+      x: number;
+      y: number;
+      vx: number;
+      vy: number;
+      size: number;
+      alpha: number;
+    }[] = [];
     for (let i = 0; i < 60; i++) {
       particles.push({
         x: Math.random() * window.innerWidth,
@@ -70,8 +99,9 @@ export class HomeComponent {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => {
-        p.x += p.vx; p.y += p.vy;
+      particles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
         if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
         ctx.beginPath();

@@ -24,12 +24,12 @@ export class EmailService {
         environment.emailjsServiceId,
         environment.emailjsTemplateId,
         {
-          from_name:  form.name,
+          from_name: form.name,
           from_email: form.email,
-          subject:    form.subject,
-          message:    form.message,
-          to_name:    'Gowri Prasath Babu',
-          reply_to:   form.email,
+          subject: form.subject,
+          message: form.message,
+          to_name: 'Gowri Prasath Babu',
+          reply_to: form.email,
         },
         environment.emailjsPublicKey,
       );

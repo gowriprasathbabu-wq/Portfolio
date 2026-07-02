@@ -1,12 +1,18 @@
 import { Injectable } from '@angular/core';
 import {
-  PersonalInfo, SkillCategory, CoreSkill, Project,
-  Experience, Achievement, ArchNode, Certification, NavItem
+  PersonalInfo,
+  SkillCategory,
+  CoreSkill,
+  Project,
+  Experience,
+  Achievement,
+  ArchNode,
+  Certification,
+  NavItem,
 } from '../models/portfolio.models';
 
 @Injectable({ providedIn: 'root' })
 export class PortfolioDataService {
-
   readonly personalInfo: PersonalInfo = {
     name: 'Gowri Prasath Babu',
     title: 'Senior Software Engineer',
@@ -30,22 +36,22 @@ export class PortfolioDataService {
   ];
 
   readonly navItems: NavItem[] = [
-    { label: 'About',        anchor: 'about' },
-    { label: 'Skills',       anchor: 'skills' },
-    { label: 'Experience',   anchor: 'experience' },
-    { label: 'Projects',     anchor: 'projects' },
+    { label: 'About', anchor: 'about' },
+    { label: 'Skills', anchor: 'skills' },
+    { label: 'Experience', anchor: 'experience' },
+    { label: 'Projects', anchor: 'projects' },
     { label: 'Architecture', anchor: 'architecture' },
-    { label: 'Contact',      anchor: 'contact' },
+    { label: 'Contact', anchor: 'contact' },
   ];
 
   readonly coreSkills: CoreSkill[] = [
-    { label: 'Angular',      percentage: 95 },
-    { label: '.NET Core',    percentage: 95 },
-    { label: 'TypeScript',   percentage: 92 },
-    { label: 'React',        percentage: 85 },
-    { label: 'AWS',          percentage: 80 },
-    { label: 'SQL Server',   percentage: 90 },
-    { label: 'DevOps',       percentage: 75 },
+    { label: 'Angular', percentage: 95 },
+    { label: '.NET Core', percentage: 95 },
+    { label: 'TypeScript', percentage: 92 },
+    { label: 'React', percentage: 85 },
+    { label: 'AWS', percentage: 80 },
+    { label: 'SQL Server', percentage: 90 },
+    { label: 'DevOps', percentage: 75 },
   ];
 
   readonly skillCategories: SkillCategory[] = [
@@ -58,11 +64,11 @@ export class PortfolioDataService {
         { name: 'Angular 20', level: 95, icon: '🅰️' },
         { name: 'TypeScript', level: 92, icon: '📘' },
         { name: 'JavaScript', level: 90, icon: '🟨' },
-        { name: 'React',      level: 85, icon: '⚛️' },
-        { name: 'Ionic',      level: 82, icon: '📱' },
-        { name: 'HTML5',      level: 95, icon: '🌐' },
-        { name: 'SCSS/CSS3',  level: 88, icon: '🎨' },
-        { name: 'RxJS',       level: 85, icon: '🔄' },
+        { name: 'React', level: 85, icon: '⚛️' },
+        { name: 'Ionic', level: 82, icon: '📱' },
+        { name: 'HTML5', level: 95, icon: '🌐' },
+        { name: 'SCSS/CSS3', level: 88, icon: '🎨' },
+        { name: 'RxJS', level: 85, icon: '🔄' },
       ],
     },
     {
@@ -72,10 +78,10 @@ export class PortfolioDataService {
       color: '#3B82F6',
       skills: [
         { name: 'ASP.NET Core', level: 95, icon: '🔷' },
-        { name: 'C#',           level: 92, icon: '💠' },
+        { name: 'C#', level: 92, icon: '💠' },
         { name: 'Entity Framework', level: 88, icon: '🗄️' },
-        { name: 'REST APIs',    level: 95, icon: '🔌' },
-        { name: 'SignalR',      level: 75, icon: '📡' },
+        { name: 'REST APIs', level: 95, icon: '🔌' },
+        { name: 'SignalR', level: 75, icon: '📡' },
       ],
     },
     {
@@ -84,9 +90,9 @@ export class PortfolioDataService {
       icon: '🗃️',
       color: '#22C55E',
       skills: [
-        { name: 'MSSQL',     level: 90, icon: '🗄️' },
+        { name: 'MSSQL', level: 90, icon: '🗄️' },
         { name: 'SQL Server', level: 90, icon: '💽' },
-        { name: 'T-SQL',     level: 85, icon: '📊' },
+        { name: 'T-SQL', level: 85, icon: '📊' },
         { name: 'Stored Procedures', level: 82, icon: '📋' },
       ],
     },
@@ -96,12 +102,12 @@ export class PortfolioDataService {
       icon: '☁️',
       color: '#F59E0B',
       skills: [
-        { name: 'AWS EC2',         level: 82, icon: '☁️' },
-        { name: 'AWS ECS/EKS',     level: 78, icon: '🐋' },
-        { name: 'Docker',          level: 80, icon: '🐳' },
-        { name: 'GitHub Actions',  level: 78, icon: '🔧' },
-        { name: 'AWS IAM',         level: 80, icon: '🔐' },
-        { name: 'AWS ELB',         level: 75, icon: '⚖️' },
+        { name: 'AWS EC2', level: 82, icon: '☁️' },
+        { name: 'AWS ECS/EKS', level: 78, icon: '🐋' },
+        { name: 'Docker', level: 80, icon: '🐳' },
+        { name: 'GitHub Actions', level: 78, icon: '🔧' },
+        { name: 'AWS IAM', level: 80, icon: '🔐' },
+        { name: 'AWS ELB', level: 75, icon: '⚖️' },
       ],
     },
     {
@@ -110,8 +116,8 @@ export class PortfolioDataService {
       icon: '🔒',
       color: '#A855F7',
       skills: [
-        { name: 'Keycloak',      level: 85, icon: '🔑' },
-        { name: 'OAuth2 / JWT',  level: 88, icon: '🛡️' },
+        { name: 'Keycloak', level: 85, icon: '🔑' },
+        { name: 'OAuth2 / JWT', level: 88, icon: '🛡️' },
         { name: 'Authentication', level: 90, icon: '🔐' },
         { name: 'Authorization', level: 88, icon: '✅' },
       ],
@@ -122,10 +128,10 @@ export class PortfolioDataService {
       icon: '✨',
       color: '#EC4899',
       skills: [
-        { name: 'SonarQube',    level: 82, icon: '🔍' },
+        { name: 'SonarQube', level: 82, icon: '🔍' },
         { name: 'Unit Testing', level: 80, icon: '🧪' },
-        { name: 'Code Review',  level: 92, icon: '👁️' },
-        { name: 'Agile/SCRUM',  level: 90, icon: '🔄' },
+        { name: 'Code Review', level: 92, icon: '👁️' },
+        { name: 'Agile/SCRUM', level: 90, icon: '🔄' },
       ],
     },
   ];
@@ -135,8 +141,10 @@ export class PortfolioDataService {
       id: 'procon',
       title: 'PROCON',
       subtitle: 'Global Process Evaluation Platform',
-      description: 'Multi-Level Process Flow Evaluation and Awarding System deployed across 10+ countries. Built for enterprise procurement evaluation with advanced workflow management.',
-      longDescription: 'Enterprise-grade platform for multi-level approval workflows, enabling organizations to evaluate and award processes across global operations.',
+      description:
+        'Multi-Level Process Flow Evaluation and Awarding System deployed across 10+ countries. Built for enterprise procurement evaluation with advanced workflow management.',
+      longDescription:
+        'Enterprise-grade platform for multi-level approval workflows, enabling organizations to evaluate and award processes across global operations.',
       tech: ['Angular', 'ASP.NET Core', 'MSSQL', 'SMTP', 'AWS EC2', 'AWS ELB', 'Docker'],
       features: [
         'Multi-level approval workflows',
@@ -154,7 +162,8 @@ export class PortfolioDataService {
       id: 'vfix',
       title: 'V-Fix',
       subtitle: 'Enterprise Support Management Portal',
-      description: 'Centralized Support Ticket Management Portal with full lifecycle management, SLA tracking, and seamless Keycloak authentication integration.',
+      description:
+        'Centralized Support Ticket Management Portal with full lifecycle management, SLA tracking, and seamless Keycloak authentication integration.',
       tech: ['Angular', 'ASP.NET Core', 'MSSQL', 'Keycloak', 'SignalR'],
       features: [
         'End-to-end ticket lifecycle management',
@@ -172,7 +181,8 @@ export class PortfolioDataService {
       id: 'procuresprint',
       title: 'ProcureSprint Agentic',
       subtitle: 'AI-Powered Procurement Platform',
-      description: 'Cutting-edge AI-powered procurement workflow platform leveraging Microsoft Copilot for intelligent automation, agentic workflows, and smart procurement decisions.',
+      description:
+        'Cutting-edge AI-powered procurement workflow platform leveraging Microsoft Copilot for intelligent automation, agentic workflows, and smart procurement decisions.',
       tech: ['React', 'Vite', 'TypeScript', 'Copilot Integration', 'Web Components'],
       features: [
         'Agentic AI automation',
@@ -190,7 +200,8 @@ export class PortfolioDataService {
       id: 'invoice-mgmt',
       title: 'Supplier Invoice Management',
       subtitle: 'Invoice Automation System',
-      description: 'End-to-end supplier invoice automation and management system with intelligent workflow processing, reporting, and multi-vendor support.',
+      description:
+        'End-to-end supplier invoice automation and management system with intelligent workflow processing, reporting, and multi-vendor support.',
       tech: ['Angular', 'ASP.NET Core', 'MSSQL', 'AWS S3'],
       features: [
         'Automated invoice processing',
@@ -207,7 +218,8 @@ export class PortfolioDataService {
       id: 'einvoice',
       title: 'E-Invoice & E-Way Bill',
       subtitle: 'GST Compliance Automation',
-      description: 'Automated GST-compliant e-invoice and e-way bill generation platform with direct integration to government APIs and real-time validation.',
+      description:
+        'Automated GST-compliant e-invoice and e-way bill generation platform with direct integration to government APIs and real-time validation.',
       tech: ['Angular', 'ASP.NET Core', 'MSSQL', 'Government APIs', 'SMTP'],
       features: [
         'GST compliance automation',
@@ -229,7 +241,8 @@ export class PortfolioDataService {
       role: 'Senior Software Engineer',
       period: '2021 – Present',
       location: 'Coimbatore, Tamil Nadu',
-      description: 'Leading enterprise product development for global clients across procurement, support management, and compliance domains.',
+      description:
+        'Leading enterprise product development for global clients across procurement, support management, and compliance domains.',
       responsibilities: [
         'Architecting and developing enterprise Angular applications using latest features including Signals API, standalone components, and SSR',
         'Building scalable ASP.NET Core REST APIs with clean architecture and SOLID principles',
@@ -241,18 +254,51 @@ export class PortfolioDataService {
         'Deploying products across 10+ countries with multi-tenant architecture',
       ],
       technologies: [
-        'Angular 20', 'TypeScript', 'ASP.NET Core', 'C#', 'MSSQL',
-        'AWS', 'Docker', 'Keycloak', 'SonarQube', 'React', 'Ionic',
+        'Angular 20',
+        'TypeScript',
+        'ASP.NET Core',
+        'C#',
+        'MSSQL',
+        'AWS',
+        'Docker',
+        'Keycloak',
+        'SonarQube',
+        'React',
+        'Ionic',
       ],
       current: true,
     },
   ];
 
   readonly achievements: Achievement[] = [
-    { id: 'countries', value: '10+', label: 'Countries Served', description: 'Global product deployments', icon: '🌍' },
-    { id: 'projects',  value: '20+', label: 'Projects Delivered', description: 'Enterprise solutions shipped', icon: '🚀' },
-    { id: 'years',     value: '5+',  label: 'Years Experience', description: 'Full stack engineering', icon: '⚡' },
-    { id: 'users',     value: '1K+', label: 'Enterprise Users', description: 'Active platform users', icon: '👥' },
+    {
+      id: 'countries',
+      value: '10+',
+      label: 'Countries Served',
+      description: 'Global product deployments',
+      icon: '🌍',
+    },
+    {
+      id: 'projects',
+      value: '20+',
+      label: 'Projects Delivered',
+      description: 'Enterprise solutions shipped',
+      icon: '🚀',
+    },
+    {
+      id: 'years',
+      value: '5+',
+      label: 'Years Experience',
+      description: 'Full stack engineering',
+      icon: '⚡',
+    },
+    {
+      id: 'users',
+      value: '1K+',
+      label: 'Enterprise Users',
+      description: 'Active platform users',
+      icon: '👥',
+    },
   ];
 
   readonly archNodes: ArchNode[] = [

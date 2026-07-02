@@ -2,7 +2,6 @@ import { Injectable, signal, computed } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class PortfolioState {
-
   // Navigation state
   readonly activeSection = signal<string>('hero');
   readonly isNavOpen = signal<boolean>(false);
@@ -29,12 +28,16 @@ export class PortfolioState {
 
   // Computed
   readonly navLinks = computed(() => [
-    { label: 'About',        anchor: 'about',        active: this.activeSection() === 'about' },
-    { label: 'Skills',       anchor: 'skills',       active: this.activeSection() === 'skills' },
-    { label: 'Experience',   anchor: 'experience',   active: this.activeSection() === 'experience' },
-    { label: 'Projects',     anchor: 'projects',     active: this.activeSection() === 'projects' },
-    { label: 'Architecture', anchor: 'architecture', active: this.activeSection() === 'architecture' },
-    { label: 'Contact',      anchor: 'contact',      active: this.activeSection() === 'contact' },
+    { label: 'About', anchor: 'about', active: this.activeSection() === 'about' },
+    { label: 'Skills', anchor: 'skills', active: this.activeSection() === 'skills' },
+    { label: 'Experience', anchor: 'experience', active: this.activeSection() === 'experience' },
+    { label: 'Projects', anchor: 'projects', active: this.activeSection() === 'projects' },
+    {
+      label: 'Architecture',
+      anchor: 'architecture',
+      active: this.activeSection() === 'architecture',
+    },
+    { label: 'Contact', anchor: 'contact', active: this.activeSection() === 'contact' },
   ]);
 
   showToast(message: string, type: 'success' | 'error' = 'success', durationMs = 4000): void {
@@ -53,7 +56,7 @@ export class PortfolioState {
   }
 
   toggleNav(): void {
-    this.isNavOpen.update(v => !v);
+    this.isNavOpen.update((v) => !v);
   }
 
   closeNav(): void {

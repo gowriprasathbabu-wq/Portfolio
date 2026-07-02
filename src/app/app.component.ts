@@ -1,7 +1,12 @@
 import {
-  Component, OnInit, OnDestroy, HostListener,
-  inject, ChangeDetectionStrategy,
-  PLATFORM_ID, afterNextRender,
+  Component,
+  OnInit,
+  OnDestroy,
+  HostListener,
+  inject,
+  ChangeDetectionStrategy,
+  PLATFORM_ID,
+  afterNextRender,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
@@ -20,10 +25,11 @@ import { PortfolioState } from './state/portfolio.state';
 
     <!-- Cursor glow (desktop only) -->
     @if (isBrowser) {
-      <div class="cursor-glow"
-           [style.left.px]="state.cursorPosition().x"
-           [style.top.px]="state.cursorPosition().y">
-      </div>
+      <div
+        class="cursor-glow"
+        [style.left.px]="state.cursorPosition().x"
+        [style.top.px]="state.cursorPosition().y"
+      ></div>
     }
 
     <!-- Toast notifications -->
@@ -86,24 +92,31 @@ export class AppComponent implements OnInit, OnDestroy {
 
   private initSectionObserver(): void {
     const sections = [
-      'hero', 'about', 'skills', 'experience',
-      'projects', 'achievements', 'architecture', 'certifications', 'contact',
+      'hero',
+      'about',
+      'skills',
+      'experience',
+      'projects',
+      'achievements',
+      'architecture',
+      'certifications',
+      'contact',
     ];
 
     this.sectionObserver = new IntersectionObserver(
       (entries) => {
         const visible = entries
-          .filter(e => e.isIntersecting)
+          .filter((e) => e.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
         if (visible.length > 0) {
           this.state.setActiveSection(visible[0].target.id);
         }
       },
-      { threshold: 0.25, rootMargin: '-80px 0px -20% 0px' }
+      { threshold: 0.25, rootMargin: '-80px 0px -20% 0px' },
     );
 
-    sections.forEach(id => {
+    sections.forEach((id) => {
       const el = document.getElementById(id);
       if (el) this.sectionObserver!.observe(el);
     });

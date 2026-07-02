@@ -1,128 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Primary Meta -->
-  <title>Gowri Prasath Babu | Senior Software Engineer</title>
-  <meta name="description" content="Senior Software Engineer with 5+ years of experience in Angular 20, ASP.NET Core, React, AWS, Docker, and Keycloak. Based in Coimbatore, Tamil Nadu.">
-  <meta name="keywords" content="Angular Developer, Full Stack Engineer, ASP.NET Core, React, AWS, TypeScript, Coimbatore, Tamil Nadu, India, Software Engineer">
-  <meta name="author" content="Gowri Prasath Babu">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#FF6B00">
+    <!-- Primary Meta -->
+    <title>Gowri Prasath Babu | Senior Software Engineer</title>
+    <meta
+      name="description"
+      content="Senior Software Engineer with 5+ years of experience in Angular 20, ASP.NET Core, React, AWS, Docker, and Keycloak. Based in Coimbatore, Tamil Nadu."
+    />
+    <meta
+      name="keywords"
+      content="Angular Developer, Full Stack Engineer, ASP.NET Core, React, AWS, TypeScript, Coimbatore, Tamil Nadu, India, Software Engineer"
+    />
+    <meta name="author" content="Gowri Prasath Babu" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FF6B00" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://gowriprasath.dev/">
-  <meta property="og:title" content="Gowri Prasath Babu | Senior Software Engineer">
-  <meta property="og:description" content="Enterprise-grade Angular, ASP.NET Core & AWS solutions. 5+ years building products deployed across 10+ countries.">
-  <meta property="og:image" content="https://gowriprasath.dev/assets/og-image.png">
-  <meta property="og:site_name" content="Gowri Prasath Portfolio">
-  <meta property="og:locale" content="en_IN">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gowriprasath.dev/" />
+    <meta property="og:title" content="Gowri Prasath Babu | Senior Software Engineer" />
+    <meta
+      property="og:description"
+      content="Enterprise-grade Angular, ASP.NET Core & AWS solutions. 5+ years building products deployed across 10+ countries."
+    />
+    <meta property="og:image" content="https://gowriprasath.dev/assets/og-image.png" />
+    <meta property="og:site_name" content="Gowri Prasath Portfolio" />
+    <meta property="og:locale" content="en_IN" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://gowriprasath.dev/">
-  <meta name="twitter:title" content="Gowri Prasath Babu | Senior Software Engineer">
-  <meta name="twitter:description" content="Enterprise-grade Angular, ASP.NET Core & AWS solutions. 5+ years building products deployed across 10+ countries.">
-  <meta name="twitter:image" content="https://gowriprasath.dev/assets/og-image.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://gowriprasath.dev/" />
+    <meta name="twitter:title" content="Gowri Prasath Babu | Senior Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Enterprise-grade Angular, ASP.NET Core & AWS solutions. 5+ years building products deployed across 10+ countries."
+    />
+    <meta name="twitter:image" content="https://gowriprasath.dev/assets/og-image.png" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://gowriprasath.dev/">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://gowriprasath.dev/" />
 
-  <!-- Preconnect for fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Gowri Prasath Babu",
-    "jobTitle": "Senior Software Engineer",
-    "description": "Senior Software Engineer with 5+ years of experience in Angular, ASP.NET Core, React, and AWS.",
-    "url": "https://gowriprasath.dev",
-    "sameAs": [
-      "https://github.com/gowriprasath",
-      "https://linkedin.com/in/gowriprasath"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Coimbatore",
-      "addressRegion": "Tamil Nadu",
-      "addressCountry": "IN"
-    },
-    "knowsAbout": ["Angular", "TypeScript", "ASP.NET Core", "React", "AWS", "Docker", "Keycloak"],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Exalca Technologies"
-    }
-  }
-  </script>
-
-  <!-- Critical CSS inlined for LCP performance -->
-  <style>
-    *,*::before,*::after{box-sizing:border-box}
-    html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-    body{margin:0;padding:0;background:#0A0A0A;color:#fff;font-family:'Inter',system-ui,sans-serif;overflow-x:hidden}
-    app-root{display:block}
-    /* Page loading skeleton */
-    .initial-loader{
-      position:fixed;inset:0;
-      background:#0A0A0A;
-      display:flex;align-items:center;justify-content:center;
-      z-index:9999;
-      transition:opacity .4s ease;
-    }
-    .initial-loader.hide{opacity:0;pointer-events:none}
-    .loader-logo{
-      font-family:monospace;font-size:1.5rem;font-weight:700;
-      color:#FF6B00;animation:fade 1.5s ease infinite;
-    }
-    @keyframes fade{0%,100%{opacity:.4}50%{opacity:1}}
-  </style>
-</head>
-<body>
-  <!-- Initial loader (hidden once Angular bootstraps) -->
-  <div class="initial-loader" id="initial-loader" aria-hidden="true">
-    <div class="loader-logo">&lt;GP/&gt;</div>
-  </div>
-
-  <!-- Skip navigation for accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <app-root></app-root>
-
-  <script>
-    // Hide loader once app is ready
-    window.addEventListener('load', () => {
-      requestAnimationFrame(() => {
-        const loader = document.getElementById('initial-loader');
-        if (loader) {
-          loader.classList.add('hide');
-          setTimeout(() => loader.remove(), 500);
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gowri Prasath Babu",
+        "jobTitle": "Senior Software Engineer",
+        "description": "Senior Software Engineer with 5+ years of experience in Angular, ASP.NET Core, React, and AWS.",
+        "url": "https://gowriprasath.dev",
+        "sameAs": ["https://github.com/gowriprasath", "https://linkedin.com/in/gowriprasath"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Coimbatore",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        },
+        "knowsAbout": ["Angular", "TypeScript", "ASP.NET Core", "React", "AWS", "Docker", "Keycloak"],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Exalca Technologies"
         }
-      });
-    });
-  </script>
+      }
+    </script>
 
-  <style>
-    .skip-link {
-      position:absolute;top:-100%;left:0;
-      background:#FF6B00;color:#ffffff;
-      padding:12px 20px;font-weight:600;
-      text-decoration:none;z-index:10000;
-      border-radius:0 0 8px 0;
-    }
-    .skip-link:focus{top:0}
-  </style>
-</body>
+    <!-- Critical CSS inlined for LCP performance -->
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0a0a0a;
+        color: #fff;
+        font-family: 'Inter', system-ui, sans-serif;
+        overflow-x: hidden;
+      }
+      app-root {
+        display: block;
+      }
+      /* Page loading skeleton */
+      .initial-loader {
+        position: fixed;
+        inset: 0;
+        background: #0a0a0a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.4s ease;
+      }
+      .initial-loader.hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .loader-logo {
+        font-family: monospace;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ff6b00;
+        animation: fade 1.5s ease infinite;
+      }
+      @keyframes fade {
+        0%,
+        100% {
+          opacity: 0.4;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Initial loader (hidden once Angular bootstraps) -->
+    <div class="initial-loader" id="initial-loader" aria-hidden="true">
+      <div class="loader-logo">&lt;GP/&gt;</div>
+    </div>
+
+    <!-- Skip navigation for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <app-root></app-root>
+
+    <script>
+      // Hide loader once app is ready
+      window.addEventListener('load', () => {
+        requestAnimationFrame(() => {
+          const loader = document.getElementById('initial-loader');
+          if (loader) {
+            loader.classList.add('hide');
+            setTimeout(() => loader.remove(), 500);
+          }
+        });
+      });
+    </script>
+
+    <style>
+      .skip-link {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        background: #ff6b00;
+        color: #ffffff;
+        padding: 12px 20px;
+        font-weight: 600;
+        text-decoration: none;
+        z-index: 10000;
+        border-radius: 0 0 8px 0;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+    </style>
+  </body>
 </html>
