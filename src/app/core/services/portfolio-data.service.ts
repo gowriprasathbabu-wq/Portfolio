@@ -9,7 +9,7 @@ export class PortfolioDataService {
 
   readonly personalInfo: PersonalInfo = {
     name: 'Gowri Prasath Babu',
-    title: 'Senior Full Stack Software Engineer',
+    title: 'Senior Software Engineer',
     location: 'Coimbatore, Tamil Nadu, India',
     experience: '5+ Years',
     email: 'gowriprasathbabu@gmail.com',
@@ -226,7 +226,7 @@ export class PortfolioDataService {
     {
       id: 'exalca',
       company: 'Exalca Technologies',
-      role: 'Senior Full Stack Software Engineer',
+      role: 'Senior Software Engineer',
       period: '2021 – Present',
       location: 'Coimbatore, Tamil Nadu',
       description: 'Leading enterprise product development for global clients across procurement, support management, and compliance domains.',

@@ -1,6 +1,6 @@
 # 🚀 Gowri Prasath Babu — Enterprise Portfolio
 
-> Senior Full Stack Software Engineer | Angular 20 · ASP.NET Core · AWS · React
+> Senior Software Engineer | Angular 20 · ASP.NET Core · AWS · React
 
 [![Angular](https://img.shields.io/badge/Angular-20-FF6B00?style=flat&logo=angular)](https://angular.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3B82F6?style=flat&logo=typescript)](https://typescriptlang.org)
@@ -226,7 +226,7 @@ MIT © 2025 Gowri Prasath Babu
 
 ## 👨‍💻 About
 
-Built by [Gowri Prasath Babu](https://gowriprasath.dev) — Senior Full Stack Software Engineer at Exalca Technologies, Coimbatore.
+Built by [Gowri Prasath Babu](https://gowriprasath.dev) — Senior Software Engineer at Exalca Technologies, Coimbatore.
 
 **Connect:**
 - GitHub: [@gowriprasath](https://github.com/gowriprasath)

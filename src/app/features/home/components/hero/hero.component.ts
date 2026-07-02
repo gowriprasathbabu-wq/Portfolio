@@ -41,13 +41,12 @@ import { PortfolioDataService } from '../../../../core/services/portfolio-data.s
 
           <!-- Name -->
           <h1 class="hero-name reveal delay-2">
-            <span class="name-line">Gowri</span>
-            <span class="name-line gradient-text">Prasath Babu</span>
+            <span class="name-line gradient-text font-set">Gowri Prasath <span class="name-line gradient-text">Babu</span></span>
           </h1>
 
           <!-- Title -->
           <p class="hero-title reveal delay-3">
-            Senior Full Stack Software Engineer
+            Senior Software Engineer
           </p>
 
           <!-- Rotating animated subtitle -->
@@ -172,7 +171,7 @@ import { PortfolioDataService } from '../../../../core/services/portfolio-data.s
 
             <!-- Floating tech badges -->
             <div class="tech-badge-float badge-angular" aria-hidden="true">
-              <span>🅰️</span><span>Angular 20</span>
+              <span>🅰️</span><span>Angular 10+</span>
             </div>
             <div class="tech-badge-float badge-dotnet" aria-hidden="true">
               <span>🔷</span><span>.NET Core</span>
@@ -280,6 +279,9 @@ import { PortfolioDataService } from '../../../../core/services/portfolio-data.s
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+    }
+    .font-set{
+      font-size: 70px;
     }
 
     /* ---- Title ---- */
